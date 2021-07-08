@@ -29,7 +29,8 @@ function MainBox() {
 
   return (
     <div>
-      <MenuBar onButtonClick={handleClick}/>
+      <MenuBar selectedPage={selectedPage}
+      onButtonClick={handleClick}/>
       {detailsToDisplay[selectedPage]}
     </div>
   );
